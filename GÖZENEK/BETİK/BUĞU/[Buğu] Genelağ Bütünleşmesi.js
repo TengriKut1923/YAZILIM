@@ -5,8 +5,8 @@
 // @name         [Buğu] Genelağ Bütünleşmesi
 // @homepageURL  https://www.tengrikut1923.com/
 // @supportURL   https://www.tengrikut1923.com/
-// @downloadURL  https://github.com/Revadike/SteamWebIntegration/raw/master/Steam%20Web%20Integration.user.js
-// @updateURL    https://github.com/Revadike/SteamWebIntegration/raw/master/Steam%20Web%20Integration.user.js
+// @downloadURL  https://github.com/TengriKut1923/YAZILIM/blob/main/G%C3%96ZENEK/BET%C4%B0K/BU%C4%9EU/%5BBu%C4%9Fu%5D%20Genela%C4%9F%20B%C3%BCt%C3%BCnle%C5%9Fmesi.js
+// @updateURL    https://github.com/TengriKut1923/YAZILIM/blob/main/G%C3%96ZENEK/BET%C4%B0K/BU%C4%9EU/%5BBu%C4%9Fu%5D%20Genela%C4%9F%20B%C3%BCt%C3%BCnle%C5%9Fmesi.js
 // @version      1923
 // @connect      bartervg.com
 // @connect      steam-tracker.com
