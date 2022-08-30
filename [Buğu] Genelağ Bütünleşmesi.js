@@ -26,6 +26,7 @@
 // @include      /^https?\:\/\/.+/
 // @icon         https://store.steampowered.com/favicon.ico
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.slim.min.js
+// @require      https://cdn.jsdelivr.net/gh/kapetan/jquery-observe@2.0.3/jquery-observe.js
 // @downloadURL  https://greasyfork.org/tr/scripts/450427-bu%C4%9Fu-genela%C4%9F-b%C3%BCt%C3%BCnle%C5%9Fmesi
 // ==/UserScript==
 
