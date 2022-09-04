@@ -425,7 +425,7 @@ function doApp(elem, wishlist, ownedApps, ignoredApps, followedApps, decommissio
         }
 
         if (settings.wantLimited && limited && limited[appID]) { // if limited and enabled
-            html += getIconHTML(settings.limitedColor, `Özlük özellikleri uçlu.`, llcs, settings.limitedIcon); // ⚙
+            html += getIconHTML(settings.limitedColor, `Ürün uçlu.`, llcs, settings.limitedIcon); // ⚙
             iconsEncoding += 8;
         }
 
