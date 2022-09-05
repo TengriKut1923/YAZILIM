@@ -118,7 +118,7 @@ function waitForKeyElements (
     var Hotkeys = new Map([
         ["ADD_TO_WISHLIST", "d"],
         ["NOT_INTERESTED", "x"],
-        ["NEXT_QUEUE", ["k", ""]],
+        ["NEXT_QUEUE", ["f", ""]],
         ["CLICK_REVIEWS", "y"],
         ["INVENTORY", "z"],
         ["PROFILE", "r"],
