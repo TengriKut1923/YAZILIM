@@ -20,19 +20,19 @@
     // Bulabilirse bir öğrenin betinçini alır, bulamazsa tanımsızdır.
     const txt = query => { const e = document.querySelector(query); return e && e.innerText.trim(); };
 
-    const cardsNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()"><img height="14" style="margin-bottom:-1px" src="https://steamstore-a.akamaihd.net/public/images/v6/ico/ico_cards.png"> Yaprağı var.</span>`;
+    const cardsNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()"><img height="14" style="margin-bottom:-1px">🂡 Yaprağı var.</span>`;
     const cheevosNotify = `<span style="cursor:pointer" onclick="document.getElementById('achievement_block').scrollIntoView()">🏆 {0} başarımı var.</span>`;
-    const noSingleplayerNotify = `<span style="color:black;background:yellow">Yalnızca girim.</span>`;
+    const noSingleplayerNotify = `<span style="color:black;background:yellow">🌐 Yalnızca girim.</span>`;
     const profileLimitedNotify = `<span title="Ürün DY vermez.">⚙️ Uçlu.</span>`;
     const learningAboutNotify = `<span title="Ürün DY vermez.">⌛ Denetleniyor.</span>`;
-    const freeNotify = `<span title="Bu ürünü sayışınıza eklemek ödeksizdir.">🆓 Ödeksiz.</span>`;
+    const freeNotify = `<span title="Bu ürünü sayışınıza eklemek ödeksizdir.">💸 Ödeksiz.</span>`;
     const freeToPlayNotify = `<span title="Bu ürünü oynamak ödeksizdir.">💩 Oynaması ödeksiz.</span>`;
     const adultOnlyNotify = `🔞 Yalnızca yetişkinler için.`;
-    const delistedNotify = `<span title="Bu ürün satın alınamaz.">👻 Dizme dışı.</span>`;
+    const delistedNotify = `<span title="Bu ürün satın alınamaz.">☠ Satın alınamaz.</span>`;
     const releaseDate = txt(".not_yet ~ h1 > span");
     const notYetAppend = releaseDate ? ". Tasarlanan çıkış günayı: " + releaseDate : "";
     const notYetNotify = `<span title="Bu ürün şimdilik Buğu'da bulunmuyor.${notYetAppend}">🌅 Şimdilik uygun değil.</span>`;
-    const defaultNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()">Yaprak azu başarım yok.</span>`;
+    const defaultNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()">🛇 Yaprak azu başarım yok.</span>`;
 
     const hasCards = document.querySelector("img.category_icon[src$='ico_cards.png']") !== null;
     const hasAchievements = document.querySelector("#achievement_block .communitylink_achievement_images") !== null;
