@@ -119,7 +119,7 @@ function waitForKeyElements (
         ["ADD_TO_WISHLIST", "d"],
         ["NOT_INTERESTED", "x"],
         ["NEXT_QUEUE", ["f", ""]],
-        ["CLICK_REVIEWS", "y"],
+        ["CLICK_REVIEWS", "v"],
         ["INVENTORY", "z"],
         ["PROFILE", "r"],
         ["ACTIVITY", "a"],
