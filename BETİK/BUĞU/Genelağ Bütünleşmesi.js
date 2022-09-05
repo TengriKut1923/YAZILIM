@@ -390,23 +390,23 @@ function doApp(elem, wishlist, ownedApps, ignoredApps, followedApps, decommissio
         }
 
         if (ownedApps && ownedApps[appID]) { // if owned
-            html = getIconHTML(settings.ownedColor, `${subject} Ürüne iyesiniz.`, lcs, settings.ownedIcon); // ✔
+            html = getIconHTML(settings.ownedColor, `${subject} İyesiniz.`, lcs, settings.ownedIcon); // ✔
             iconsEncoding += 1;
         } else if (wishlist[appID]) { // if not owned and wishlisted
-            html = getIconHTML(settings.wishlistColor, `${subject} Ürün dilek dizmenizde.`, lcs, settings.wishlistIcon); // ❤
+            html = getIconHTML(settings.wishlistColor, `${subject} Dilek dizmenizde.`, lcs, settings.wishlistIcon); // ❤
             iconsEncoding += 3;
         } else { // else not owned and not wishlisted
-            html = getIconHTML(settings.unownedColor, `${subject} Ürüne iye değilsiniz.`, lcs, settings.unownedIcon); // ✘
+            html = getIconHTML(settings.unownedColor, `${subject} İye değilsiniz.`, lcs, settings.unownedIcon); // ✘
             iconsEncoding += 2;
         }
 
         if (settings.wantFollowed && followedApps && followedApps[appID]) {
-            html += getIconHTML(settings.followedColor, `${subject} Ürünü izliyorsunuz.`, lcs, settings.followedIcon); // ★
+            html += getIconHTML(settings.followedColor, `${subject} İzliyorsunuz.`, lcs, settings.followedIcon); // ★
             iconsEncoding += 4;
         }
 
         if (settings.wantIgnores && ignoredApps && ignoredApps[appID]) { // if ignored and enabled
-            html += getIconHTML(settings.ignoredColor, `${subject} Ürünü yok saydınız.`, llcs, settings.ignoredIcon); // 🛇
+            html += getIconHTML(settings.ignoredColor, `${subject} Yok saydınız.`, llcs, settings.ignoredIcon); // 🛇
             iconsEncoding += 5;
         }
 
@@ -420,22 +420,22 @@ function doApp(elem, wishlist, ownedApps, ignoredApps, followedApps, decommissio
 
         if (settings.wantDecommissioned && decommissioned && decommissioned[appID]) { // if decommissioned and enabled
             const app = decommissioned[appID];
-            html += getIconHTML(settings.decommissionedColor, `Ürün satın alınamaz. "" : ""}`, dlcs, settings.decommissionedIcon, `https://steam-tracker.com/app/${appID}/`); // 🗑
+            html += getIconHTML(settings.decommissionedColor, `Satın alınamaz. "" : ""}`, dlcs, settings.decommissionedIcon, `https://steam-tracker.com/app/${appID}/`); // 🗑
             iconsEncoding += 7;
         }
 
         if (settings.wantLimited && limited && limited[appID]) { // if limited and enabled
-            html += getIconHTML(settings.limitedColor, `Ürün uçlu.`, llcs, settings.limitedIcon); // ⚙
+            html += getIconHTML(settings.limitedColor, `Uçlu.`, llcs, settings.limitedIcon); // ⚙
             iconsEncoding += 8;
         }
 
         if (settings.wantCards && cards && cards[appID] && cards[appID].cards && cards[appID].cards > 0) { // if has cards and enabled
-            html += getIconHTML(settings.cardColor, `Ürünün ${cards[appID].cards} ${cards[appID].marketable ? "" : ""}yaprağı var. "" : ""}`, clcs, settings.cardIcon, `https://www.steamcardexchange.net/index.php?gamepage-appid-${appID}`); // 🂡
+            html += getIconHTML(settings.cardColor, `${cards[appID].cards} ${cards[appID].marketable ? "" : ""} yaprağı var. "" : ""}`, clcs, settings.cardIcon, `https://www.steamcardexchange.net/index.php?gamepage-appid-${appID}`); // 🂡
             iconsEncoding += 9;
         }
 
         if (settings.wantBundles && bundles && bundles[appID] && bundles[appID].bundles && bundles[appID].bundles > 0) { // if bundled and enabled
-            html += getIconHTML(settings.bundleColor, `Ürün ${bundles[appID].bundles} ${bundles[appID].bundles === 1 ? "" : "tutamda yer aldı."}`, blcs, settings.bundleIcon, `https://barter.vg/steam/app/${appID}/#bundles`); // 🎁︎
+            html += getIconHTML(settings.bundleColor, `${bundles[appID].bundles} ${bundles[appID].bundles === 1 ? "" : "tutamda yer aldı."}`, blcs, settings.bundleIcon, `https://barter.vg/steam/app/${appID}/#bundles`); // 🎁︎
             iconsEncoding += 10;
         }
 
@@ -480,15 +480,15 @@ function doSub(elem, ownedPackages, bundles, lcs, blcs) {
         let iconsEncoding = 0;
 
         if (ownedPackages[subID]) { // if owned
-            html = getIconHTML(settings.ownedColor, `Düreğe iyesiniz.`, lcs, settings.ownedIcon); // ✔
+            html = getIconHTML(settings.ownedColor, `İyesiniz.`, lcs, settings.ownedIcon); // ✔
             iconsEncoding += 1;
         } else { // else not owned
-            html = getIconHTML(settings.unownedColor, `Düreğe iye değilsiniz.`, lcs, settings.unownedIcon); // ✖
+            html = getIconHTML(settings.unownedColor, `İye değilsiniz.`, lcs, settings.unownedIcon); // ✖
             iconsEncoding += 2;
         }
 
         if (settings.wantBundles && bundles && bundles[subID] && bundles[subID].bundles && bundles[subID].bundles > 0) { // if bundled and enabled
-            html += getIconHTML(settings.bundleColor, `Dürek ${bundles[subID].bundles} ${bundles[subID].bundles === 1 ? "" : "tutamda yer aldı."}`, blcs, settings.bundleIcon, `https://barter.vg/steam/sub/${subID}/#bundles`); // 🎁︎
+            html += getIconHTML(settings.bundleColor, `${bundles[subID].bundles} ${bundles[subID].bundles === 1 ? "" : "tutamda yer aldı."}`, blcs, settings.bundleIcon, `https://barter.vg/steam/sub/${subID}/#bundles`); // 🎁︎
             iconsEncoding += 10;
         }
 
