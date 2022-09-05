@@ -32,7 +32,7 @@
     const releaseDate = txt(".not_yet ~ h1 > span");
     const notYetAppend = releaseDate ? ". Tasarlanan çıkış günayı: " + releaseDate : "";
     const notYetNotify = `<span title="Bu ürün şimdilik Buğu'da bulunmuyor.${notYetAppend}">🌅 Şimdilik satılmıyor.</span>`;
-    const defaultNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()">🛇 Yaprak azu başarım yok.</span>`;
+    const defaultNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()">🛇 Başarım azu yaprak yok.</span>`;
 
     const hasCards = document.querySelector("img.category_icon[src$='ico_cards.png']") !== null;
     const hasAchievements = document.querySelector("#achievement_block .communitylink_achievement_images") !== null;
