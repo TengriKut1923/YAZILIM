@@ -430,7 +430,7 @@ function doApp(elem, wishlist, ownedApps, ignoredApps, followedApps, decommissio
         }
 
         if (settings.wantCards && cards && cards[appID] && cards[appID].cards && cards[appID].cards > 0) { // if has cards and enabled
-            html += getIconHTML(settings.cardColor, `${cards[appID].cards} ${cards[appID].marketable ? "" : ""} yaprağı var. "" : ""}`, clcs, settings.cardIcon, `https://www.steamcardexchange.net/index.php?gamepage-appid-${appID}`); // 🂡
+            html += getIconHTML(settings.cardColor, `${cards[appID].cards} ${cards[appID].marketable ? "" : ""}yaprağı var. "" : ""}`, clcs, settings.cardIcon, `https://www.steamcardexchange.net/index.php?gamepage-appid-${appID}`); // 🂡
             iconsEncoding += 9;
         }
 
