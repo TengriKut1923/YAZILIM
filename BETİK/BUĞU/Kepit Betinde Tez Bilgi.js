@@ -31,7 +31,7 @@
     const delistedNotify = `<span title="Bu ürün satın alınamaz.">☠️ Satın alınamaz.</span>`;
     const releaseDate = txt(".not_yet ~ h1 > span");
     const notYetAppend = releaseDate ? ". Tasarlanan çıkış günayı: " + releaseDate : "";
-    const notYetNotify = `<span title="Bu ürün şimdilik Buğu'da bulunmuyor.${notYetAppend}">🌅 Şimdilik uygun değil.</span>`;
+    const notYetNotify = `<span title="Bu ürün şimdilik Buğu'da bulunmuyor.${notYetAppend}">🔒 Şimdilik uygun değil.</span>`;
     const defaultNotify = `<span style="cursor:pointer" onclick="document.getElementById('category_block').scrollIntoView()">🚫 Başarım azu yaprak yok.</span>`;
 
     const hasCards = document.querySelector("img.category_icon[src$='ico_cards.png']") !== null;
