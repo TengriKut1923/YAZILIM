@@ -27,7 +27,7 @@
     const learningAboutNotify = `<span title="Ürün DY vermez.">⌛ Denetleniyor.</span>`;
     const freeNotify = `<span title="Bu ürünü sayışınıza eklemek ödeksizdir.">💸 Ödeksiz.</span>`;
     const freeToPlayNotify = `<span title="Bu ürünü oynamak ödeksizdir.">💩 Oynaması ödeksiz.</span>`;
-    const adultOnlyNotify = `🔞 Yalnızca yetişkinler için.`;
+    const adultOnlyNotify = `🔞 Yetişkinler için.`;
     const delistedNotify = `<span title="Bu ürün satın alınamaz.">☠ Satın alınamaz.</span>`;
     const releaseDate = txt(".not_yet ~ h1 > span");
     const notYetAppend = releaseDate ? ". Tasarlanan çıkış günayı: " + releaseDate : "";
