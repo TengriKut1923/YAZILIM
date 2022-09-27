@@ -3,7 +3,7 @@
 // @copyright    𐱅𐰭𐰼𐰃:𐰸𐰆𐱃:𝟏𝟗𝟐𝟑
 // @namespace    𐱅𐰭𐰼𐰃:𐰸𐰆𐱃:𝟏𝟗𝟐𝟑
 // @license      Ödeksiz
-// @name         [Buğu] Ürün Değerlendirme
+// @name         [Buğu] Ek Bilgi Gösterme
 // @homepageURL  https://www.tengrikut1923.com/
 // @supportURL   https://www.tengrikut1923.com/
 // @version      s1923
